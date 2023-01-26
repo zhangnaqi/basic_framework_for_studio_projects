@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://127.0.0.1:3306/test_prod?serverTimezone=GMT%2B8&characterEncoding=utf-8
+    password: root
+    username: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+myProject:
+  #静态资源配置
+  file-path: /usr/local/tomcat/tomcat9/webapps/upload/helpage/
+  hostUrl: https://127.0.0.1
