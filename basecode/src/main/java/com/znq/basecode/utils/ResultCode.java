@@ -14,32 +14,32 @@ public enum ResultCode {
     /**
      * 服务器错误
      */
-    ERROR(500, "操作失败！"),
+    FAIL(500, "操作失败！");
 
     // 操作代码
     int code;
     // 提示信息
-    String msg;
+    String message;
 
-    HttpStatus(int code, String msg) {
+    ResultCode(int code, String message) {
         this.code = code;
-        this.msg = msg;
+        this.message = message;
     }
 
     public int code() {
         return code;
     }
 
-    public String msg() {
-        return msg;
+    public String message() {
+        return message;
     }
 
     public void setCode(int code) {
         this.code = code;
     }
 
-    public void setMessage(String msg) {
-        this.msg = msg;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
 }
